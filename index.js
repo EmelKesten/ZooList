@@ -1,37 +1,3 @@
-/*let posts = [
-    {title: 'Post One', body: 'This is post one', author:'Mike'},
-    {title: 'Post Two', body: 'This is post two', author:'Mike'}
-];
-
-
-function getPosts() {
-    setTimeout(() => {
-        let output = '';
-        posts.forEach(post => {
-            output += `<li>${post.title}</li>`;
-        });
-        document.body.innerHTML = output;
-    }, 2000);
-}
-
-
-function createPost(post){
-    return new Promise((resolve, reject) => {
-        setTimeout(() => {
-            posts.push(post);
-            const error = false;
-            if(!error){
-                resolve();
-            }
-            else{
-                reject('Error: Something went wrong');
-            }
-        }, 2000);
-    });
-}
-*/
-
-//createPost({title: 'Post Three', body: 'This is post three', author:'Mike'}).then(getPosts).catch(err => console.log(err));
 const baseUrl = 'https://zoo-animal-api.herokuapp.com/animals/rand/10';
 const div = document.querySelector('.div');
 const container = document.querySelector('.container');
